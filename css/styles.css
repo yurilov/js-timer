@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --c-violet: rgb(204, 153, 255);
+  --c-blue: rgb(102, 0, 255);
+  --c-green: rgb(0, 255, 0);
+  --c-yellow: rgb(255, 255, 102);
+  --c-red: rgb(255, 102, 102);
+  --c-mint: rgb(102, 255, 255);
+}
+
+body {
+  margin: 50px auto;
+  background-color: rgb(255, 255, 255);
+  color: #212121;
+}
+
+.timer {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: auto;
+  width: 560px;
+  height: 560px;
+  flex-direction: row;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  color: #212121;
+  border-radius: 50%;
+  background-image: url(../image/sea.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  display: flex;
+  width: 200px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 115px;
+  height: 110px;
+  margin: 70px auto;
+  text-transform: uppercase;
+  border: 0;
+  color: rgba(0, 0, 0);
+  padding: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 2px;
+  border-radius: 50%;
+}
+
+.value {
+  margin-bottom: 15px;
+  font-size: 30px;
+  margin: 5px auto;
+  border-radius: 45%;
+}
+
+.label {
+  margin-bottom: 25px;
+  font-size: 17px;
+  margin: 10px auto;
+}
